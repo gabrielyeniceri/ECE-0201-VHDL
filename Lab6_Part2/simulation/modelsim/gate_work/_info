@@ -1,0 +1,55 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab6_Part2/simulation/modelsim
+vhard_block
+Z1 !s110 1728582611
+!i10b 1
+!s100 `0<OPQ`6GlE1FKnn=nNHL0
+IEeO]7VnHdI1_PkzWe[4702
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1728575623
+Z4 8Lab6_Part2.vo
+Z5 FLab6_Part2.vo
+L0 329
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1728582611.000000
+Z8 !s107 Lab6_Part2.vo|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|Lab6_Part2.vo|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+.
+Z12 tCvgOpt 0
+vRPS
+R1
+!i10b 1
+!s100 <ZoU>H9cMMl2heh43S@GK2
+I0D9a?Wl5R@@3Eob8?8fYM3
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+n@r@p@s

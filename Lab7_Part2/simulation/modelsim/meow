@@ -1,0 +1,37 @@
+restart -f
+
+force Ain 0001
+force Bin 0001
+run 100
+
+force Ain 0010
+force Bin 0010
+run 100
+
+force Ain 0011
+force Bin 0011
+run 100
+
+force Ain 0100
+force Bin 0100
+run 100
+
+force Ain 0101
+force Bin 0101
+run 100
+
+force Ain 0110
+force Bin 0110
+run 100
+
+force Ain 0111
+force Bin 0111
+run 100
+
+force Ain 1000
+force Bin 1000
+run 100
+
+force Ain 1001
+force Bin 1001
+run 100

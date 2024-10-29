@@ -1,0 +1,241 @@
+|main
+X[0] => comparator:COMP.X[0]
+X[0] => unit_digit:UNIT.X[0]
+X[0] => mux_4b_2to1:MUX.X[0]
+X[0] => display_decoder:DISP_H.X[0]
+X[1] => comparator:COMP.X[1]
+X[1] => unit_digit:UNIT.X[1]
+X[1] => mux_4b_2to1:MUX.X[1]
+X[1] => display_decoder:DISP_H.X[1]
+X[2] => comparator:COMP.X[2]
+X[2] => unit_digit:UNIT.X[2]
+X[2] => mux_4b_2to1:MUX.X[2]
+X[2] => display_decoder:DISP_H.X[2]
+X[3] => comparator:COMP.X[3]
+X[3] => unit_digit:UNIT.X[3]
+X[3] => mux_4b_2to1:MUX.X[3]
+X[3] => display_decoder:DISP_H.X[3]
+Hout[0] <= display_decoder:DISP_H.Y[0]
+Hout[1] <= display_decoder:DISP_H.Y[1]
+Hout[2] <= display_decoder:DISP_H.Y[2]
+Hout[3] <= display_decoder:DISP_H.Y[3]
+Hout[4] <= display_decoder:DISP_H.Y[4]
+Hout[5] <= display_decoder:DISP_H.Y[5]
+Hout[6] <= display_decoder:DISP_H.Y[6]
+D1out[0] <= display_decoder:DISP_D1.Y[0]
+D1out[1] <= display_decoder:DISP_D1.Y[1]
+D1out[2] <= display_decoder:DISP_D1.Y[2]
+D1out[3] <= display_decoder:DISP_D1.Y[3]
+D1out[4] <= display_decoder:DISP_D1.Y[4]
+D1out[5] <= display_decoder:DISP_D1.Y[5]
+D1out[6] <= display_decoder:DISP_D1.Y[6]
+D0out[0] <= display_decoder:DISP_D0.Y[0]
+D0out[1] <= display_decoder:DISP_D0.Y[1]
+D0out[2] <= display_decoder:DISP_D0.Y[2]
+D0out[3] <= display_decoder:DISP_D0.Y[3]
+D0out[4] <= display_decoder:DISP_D0.Y[4]
+D0out[5] <= display_decoder:DISP_D0.Y[5]
+D0out[6] <= display_decoder:DISP_D0.Y[6]
+
+
+|main|comparator:COMP
+X[0] => LessThan0.IN8
+X[1] => LessThan0.IN7
+X[2] => LessThan0.IN6
+X[3] => LessThan0.IN5
+Z <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|unit_digit:UNIT
+X[0] => Y.IN0
+X[1] => Y.IN1
+X[1] => Y.IN1
+X[2] => Y.IN0
+X[3] => Y.IN1
+X[3] => Y.IN1
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= <GND>
+
+
+|main|tens_digit:TENS
+Z => D1[0].DATAIN
+D1[0] <= Z.DB_MAX_OUTPUT_PORT_TYPE
+D1[1] <= <GND>
+D1[2] <= <GND>
+D1[3] <= <GND>
+
+
+|main|mux_4b_2to1:MUX
+X[0] => D0.DATAA
+X[1] => D0.DATAA
+X[2] => D0.DATAA
+X[3] => D0.DATAA
+Y[0] => D0.DATAB
+Y[1] => D0.DATAB
+Y[2] => D0.DATAB
+Y[3] => D0.DATAB
+Z => D0.OUTPUTSELECT
+Z => D0.OUTPUTSELECT
+Z => D0.OUTPUTSELECT
+Z => D0.OUTPUTSELECT
+D0[0] <= D0.DB_MAX_OUTPUT_PORT_TYPE
+D0[1] <= D0.DB_MAX_OUTPUT_PORT_TYPE
+D0[2] <= D0.DB_MAX_OUTPUT_PORT_TYPE
+D0[3] <= D0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|display_decoder:DISP_H
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN0
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[1] => Y.IN0
+X[1] => Y.IN1
+X[1] => Y.IN0
+X[1] => Y.IN1
+X[1] => Y.IN1
+X[1] => Y.IN0
+X[1] => Y.IN1
+X[1] => Y.IN1
+X[1] => Y.IN1
+X[1] => Y.IN1
+X[1] => Y.IN0
+X[2] => Y.IN1
+X[2] => Y.IN0
+X[2] => Y.IN0
+X[2] => Y.IN0
+X[2] => Y.IN1
+X[2] => Y.IN0
+X[3] => Y.IN1
+X[3] => Y.IN1
+X[3] => Y.IN1
+X[3] => Y.IN1
+X[3] => Y.IN1
+X[3] => Y.IN1
+X[3] => Y.IN1
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|display_decoder:DISP_D1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN0
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[1] => Y.IN0
+X[1] => Y.IN1
+X[1] => Y.IN0
+X[1] => Y.IN1
+X[1] => Y.IN1
+X[1] => Y.IN0
+X[1] => Y.IN1
+X[1] => Y.IN1
+X[1] => Y.IN1
+X[1] => Y.IN1
+X[1] => Y.IN0
+X[2] => Y.IN1
+X[2] => Y.IN0
+X[2] => Y.IN0
+X[2] => Y.IN0
+X[2] => Y.IN1
+X[2] => Y.IN0
+X[3] => Y.IN1
+X[3] => Y.IN1
+X[3] => Y.IN1
+X[3] => Y.IN1
+X[3] => Y.IN1
+X[3] => Y.IN1
+X[3] => Y.IN1
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|display_decoder:DISP_D0
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN0
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[0] => Y.IN1
+X[1] => Y.IN0
+X[1] => Y.IN1
+X[1] => Y.IN0
+X[1] => Y.IN1
+X[1] => Y.IN1
+X[1] => Y.IN0
+X[1] => Y.IN1
+X[1] => Y.IN1
+X[1] => Y.IN1
+X[1] => Y.IN1
+X[1] => Y.IN0
+X[2] => Y.IN1
+X[2] => Y.IN0
+X[2] => Y.IN0
+X[2] => Y.IN0
+X[2] => Y.IN1
+X[2] => Y.IN0
+X[3] => Y.IN1
+X[3] => Y.IN1
+X[3] => Y.IN1
+X[3] => Y.IN1
+X[3] => Y.IN1
+X[3] => Y.IN1
+X[3] => Y.IN1
+Y[0] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

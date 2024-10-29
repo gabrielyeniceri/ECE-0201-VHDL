@@ -1,0 +1,130 @@
+restart -f
+force Z 0
+force X 0000
+force Y 0000
+run 100
+
+force X 0001
+force Y 0001
+run 100
+
+force X 0010
+force Y 0010
+run 100
+
+force X 0011
+force Y 0011
+run 100
+
+force X 0100
+force Y 0100
+run 100
+
+force X 0101
+force Y 0101
+run 100
+
+force X 0110
+force Y 0110
+run 100
+
+force X 0111
+force Y 0111
+run 100
+
+force X 1000
+force Y 1000
+run 100
+
+force X 1001
+force Y 1001
+run 100
+
+force X 1010
+force Y 1010
+run 100
+
+force X 1011
+force Y 1011
+run 100
+
+force X 1100
+force Y 1100
+run 100
+
+force X 1101
+force Y 1101
+run 100
+
+force X 1110
+force Y 1110
+run 100
+
+force X 1111
+force Y 1111
+run 100
+
+force Z 1
+force X 0000
+force Y 0000
+run 100
+
+force X 0001
+force Y 0001
+run 100
+
+force X 0010
+force Y 0010
+run 100
+
+force X 0011
+force Y 0011
+run 100
+
+force X 0100
+force Y 0100
+run 100
+
+force X 0101
+force Y 0101
+run 100
+
+force X 0110
+force Y 0110
+run 100
+
+force X 0111
+force Y 0111
+run 100
+
+force X 1000
+force Y 1000
+run 100
+
+force X 1001
+force Y 1001
+run 100
+
+force X 1010
+force Y 1010
+run 100
+
+force X 1011
+force Y 1011
+run 100
+
+force X 1100
+force Y 1100
+run 100
+
+force X 1101
+force Y 1101
+run 100
+
+force X 1110
+force Y 1110
+run 100
+
+force X 1111
+force Y 1111
+run 100

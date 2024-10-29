@@ -1,0 +1,28 @@
+restart -f
+
+force X 0001
+run 100
+
+force X 0010
+run 100
+
+force X 0011
+run 100
+
+force X 0100
+run 100
+
+force X 0101
+run 100
+
+force X 0110
+run 100
+
+force X 0111
+run 100
+
+force X 1000
+run 100
+
+force X 1001
+run 100

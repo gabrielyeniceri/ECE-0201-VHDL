@@ -1,0 +1,248 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/simulation/modelsim
+Ecomparator
+Z1 w1729799319
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8C:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/comparator.vhd
+Z7 FC:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/comparator.vhd
+l0
+L6
+Vl<KF3KggWJZKMz4AaYgJj1
+!s100 iE<hD3aZ8hBO9e?jWe34O1
+Z8 OV;C;10.5b;63
+31
+Z9 !s110 1730057887
+!i10b 1
+Z10 !s108 1730057887.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/comparator.vhd|
+Z12 !s107 C:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/comparator.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Astructural_comparator
+R2
+R3
+R4
+R5
+DEx4 work 10 comparator 0 22 l<KF3KggWJZKMz4AaYgJj1
+l12
+L11
+V<J23BQgX=4:MIo49QhR:h1
+!s100 2@>fX[cz;Ung53f2^WT;Z2
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Edisplay_decoder
+Z15 w1729616948
+R4
+R5
+R0
+Z16 8C:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/display_decoder.vhd
+Z17 FC:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/display_decoder.vhd
+l0
+L4
+VVAZ_PgeUP7N]C6g`Z_7f02
+!s100 ONTRM1TG^TRn[amf?UV0c1
+R8
+31
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/display_decoder.vhd|
+Z19 !s107 C:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/display_decoder.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R4
+R5
+DEx4 work 15 display_decoder 0 22 VAZ_PgeUP7N]C6g`Z_7f02
+l11
+L10
+VQTRKH2e@@YF<9R461_:he1
+!s100 K?]P>;8;[f3XeCl7dLS8`2
+R8
+31
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 1
+R13
+R14
+Emain
+Z20 w1730057173
+R4
+R5
+R0
+Z21 8C:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/main.vhd
+Z22 FC:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/main.vhd
+l0
+L5
+V<294Bl5TV_GdT_N1Kh4IH2
+!s100 BkVH89Y^=8jIENE2]:a7J2
+R8
+31
+R9
+!i10b 1
+R10
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/main.vhd|
+Z24 !s107 C:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/main.vhd|
+!i113 1
+R13
+R14
+Astructural_main
+R4
+R5
+DEx4 work 4 main 0 22 <294Bl5TV_GdT_N1Kh4IH2
+l45
+L12
+V[<c[Mb4z9n@;eEfOH^`il0
+!s100 M7U>HRi;dL6YFJKacXDR>0
+R8
+31
+R9
+!i10b 1
+R10
+R23
+R24
+!i113 1
+R13
+R14
+Emux_4b_2to1
+Z25 w1729799362
+R4
+R5
+R0
+Z26 8C:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/mux_4b_2to1.vhd
+Z27 FC:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/mux_4b_2to1.vhd
+l0
+L4
+VJlHVQ7G]b[`_4gk6<>:]m2
+!s100 Q^_T<_3BmeJ8:I[iza5Ul0
+R8
+31
+R9
+!i10b 1
+R10
+Z28 !s90 -reportprogress|300|-93|-work|work|C:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/mux_4b_2to1.vhd|
+Z29 !s107 C:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/mux_4b_2to1.vhd|
+!i113 1
+R13
+R14
+Astructural_mux_4b_2to1
+R4
+R5
+DEx4 work 11 mux_4b_2to1 0 22 JlHVQ7G]b[`_4gk6<>:]m2
+l12
+L11
+VBP[gO;YmSI0SlglDNSWSZ2
+!s100 0^mOb5_7cdhGHlNYDm05X3
+R8
+31
+R9
+!i10b 1
+R10
+R28
+R29
+!i113 1
+R13
+R14
+Etens_digit
+Z30 w1730057024
+R4
+R5
+R0
+Z31 8C:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/tens_digit.vhd
+Z32 FC:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/tens_digit.vhd
+l0
+L4
+VFBU@_<DPhcco7;5llNaIa1
+!s100 UDF0L>ZHAl=0o2zo7l66^2
+R8
+31
+R9
+!i10b 1
+R10
+Z33 !s90 -reportprogress|300|-93|-work|work|C:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/tens_digit.vhd|
+Z34 !s107 C:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/tens_digit.vhd|
+!i113 1
+R13
+R14
+Astructural_tens_digit
+R4
+R5
+DEx4 work 10 tens_digit 0 22 FBU@_<DPhcco7;5llNaIa1
+l10
+L9
+V7<_jcXC0hNGXNHlz?]BzI3
+!s100 Pg:PhKn1[A]Im6LWLdY[72
+R8
+31
+R9
+!i10b 1
+R10
+R33
+R34
+!i113 1
+R13
+R14
+Eunit_digit
+Z35 w1730055933
+R4
+R5
+R0
+Z36 8C:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/unit_digit.vhd
+Z37 FC:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/unit_digit.vhd
+l0
+L4
+VV0<aHVJbSZS[@lhk>A2IQ2
+!s100 @6i@9?g[H9Pm0[S`:=YKF2
+R8
+31
+R9
+!i10b 1
+R10
+Z38 !s90 -reportprogress|300|-93|-work|work|C:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/unit_digit.vhd|
+Z39 !s107 C:/Users/gkyen/OneDrive/Documents/Q prime stuff/Lab7_Part3/unit_digit.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R4
+R5
+DEx4 work 10 unit_digit 0 22 V0<aHVJbSZS[@lhk>A2IQ2
+l12
+L11
+V:Y[Q4fcSM7Fj5ONESC?d80
+!s100 PcTKSj7]VHC:JSlck_ooC1
+R8
+31
+R9
+!i10b 1
+R10
+R38
+R39
+!i113 1
+R13
+R14

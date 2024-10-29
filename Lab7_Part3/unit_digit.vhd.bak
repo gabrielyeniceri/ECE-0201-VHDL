@@ -1,0 +1,20 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity unit_digit is
+    Port ( X : in  STD_LOGIC_VECTOR(3 downto 0);
+           Y : out STD_LOGIC_VECTOR(3 downto 0));
+end unit_digit;
+
+architecture Behavioral of unit_digit is
+begin
+    -- Calculate the unit digit (D0) when X > 9
+    process(X)
+    begin
+        if (X > "1001") then
+            Y <= X - "1010"; -- Subtract 10 if X > 9
+        else
+            Y <= X;
+        end if;
+    end process;
+end Behavioral;

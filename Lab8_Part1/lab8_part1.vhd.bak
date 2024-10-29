@@ -1,0 +1,41 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity lab8_part1 is
+	Port ( 	A_top   : in STD_LOGIC_VECTOR  (7 downto 0);
+				B_top	  : in STD_LOGIC_VECTOR  (7 downto 0);
+				Cin_top : in STD_LOGIC;
+				S_top   : out STD_LOGIC_VECTOR (7 downto 0);
+				Cout_top: out STD_LOGIC);
+	end lab8_part1;
+
+architecture struct of lab8_part1 is
+
+	--4-bit RCA component declaration if you use this
+  --Delete if not use this component
+	component Four_Bit_RCA
+		Port ( 	A 	  : in STD_LOGIC_VECTOR  (3 downto 0);
+					B 	  : in STD_LOGIC_VECTOR  (3 downto 0);
+					Cin  : in STD_LOGIC;
+					S    : out STD_LOGIC_VECTOR (3 downto 0);
+					Cout : out STD_LOGIC);
+	end component;
+
+  --Full adder component declaration if you use this
+  --Delete if not use this component
+  component Full_Adder
+  	Port (  x : in STD_LOGIC;
+  		y : in STD_LOGIC;
+  		carry_in  : in STD_LOGIC;
+  		sum	 : out STD_LOGIC;
+  		carry_out : out STD_LOGIC);
+  end component;
+
+  --Declare intermediate signals if necessary
+
+
+begin
+
+
+
+end struct;

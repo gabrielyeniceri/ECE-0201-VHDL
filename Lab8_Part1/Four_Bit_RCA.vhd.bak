@@ -1,0 +1,32 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity Four_Bit_RCA is
+	Port ( 	A 	  : in STD_LOGIC_VECTOR  (3 downto 0);
+				B 	  : in STD_LOGIC_VECTOR  (3 downto 0);
+				Cin  : in STD_LOGIC;
+				S    : out STD_LOGIC_VECTOR (3 downto 0);
+				Cout : out STD_LOGIC);
+	end Four_Bit_RCA;
+
+architecture struct of Four_Bit_RCA is
+
+	--Full Adder Component Declaration
+	component Full_Adder
+		Port ( 	x 			 : in STD_LOGIC;
+					y 			 : in STD_LOGIC;
+					carry_in  : in STD_LOGIC;
+					sum 		 : out STD_LOGIC;
+					carry_out : out STD_LOGIC);
+	end component;
+
+--Intermediate Signals
+ signal ??????
+
+begin
+	--Full Adder Instantiations and Port Mappings
+	FA0: Full_Adder port map(x=>?, y=>?, carry_in=>?, sum=>?,carry_out=>?);
+	FA1: Full_Adder port map(x=>?, y=>?, carry_in=>?, sum=>?,carry_out=>?);
+	FA2: Full_Adder port map(x=>?, y=>?, carry_in=>?, sum=>?,carry_out=>?);
+	FA3: Full_Adder port map(x=>?, y=>?, carry_in=>?, sum=>?,carry_out=>?);
+end struct;
